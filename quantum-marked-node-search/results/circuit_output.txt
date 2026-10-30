@@ -1,0 +1,18 @@
+=== Circuit (AerSimulator, 1024 shots, no noise) vs exact ===
+counts       : {'11': 1024}
+exact answer : {'00': 0.0, '01': 0.0, '10': 0.0, '11': 1.0}
+success rate : 1.000   TVD vs exact: 0.0000
+
+=== Noise test (depolarizing errors) ===
+noise    1q error  2q error       success     rate     TVD
+none        0.000     0.000     1024/1024    1.000   0.000
+low         0.001     0.010     1006/1024    0.982   0.018
+medium      0.010     0.050      919/1024    0.897   0.103
+high        0.030     0.100      762/1024    0.744   0.256
+
+=== Fake IBM Brisbane (noise copied from a real 127-qubit chip) ===
+two-qubit gates after fitting to the chip: 2   circuit depth: 22
+counts       : {'00': 1, '01': 27, '10': 22, '11': 974}
+success rate : 0.951   TVD vs exact: 0.0488
+
+Figures saved in figures/, table saved in results/circuit_results.csv

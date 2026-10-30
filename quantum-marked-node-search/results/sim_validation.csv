@@ -1,0 +1,11 @@
+check,expected,got,ok
+Grover n=2: simulation vs theory (largest difference),0.0,0.0,Yes
+Grover n=3: simulation vs theory (largest difference),0.0,0.0,Yes
+Grover n=2: probability after 1 iteration,1.0,1.0,Yes
+Grover n=3: probability after 2 iterations,0.945313,0.945312,Yes
+N=4: walk operator is unitary (U^T U = I),0.0,0.0,Yes
+N=4: total probability stays 1 after 30 steps,1.0,1.0,Yes
+N=4: classical hitting time vs (N^2-1)/6,2.5,2.50165,Yes
+N=8: walk operator is unitary (U^T U = I),0.0,0.0,Yes
+N=8: total probability stays 1 after 30 steps,1.0,1.0,Yes
+N=8: classical hitting time vs (N^2-1)/6,10.5,10.46435,Yes

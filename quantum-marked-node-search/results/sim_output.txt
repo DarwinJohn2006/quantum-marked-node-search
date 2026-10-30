@@ -1,0 +1,47 @@
+
+=== Grover search, n = 2 (4 nodes) ===
+iterations  probability(sim)  probability(theory)
+         0             0.250                0.250
+         1             1.000                1.000
+         2             0.250                0.250
+         3             0.250                0.250
+         4             1.000                1.000
+         5             0.250                0.250
+         6             0.250                0.250
+         7             1.000                1.000
+
+=== Grover search, n = 3 (8 nodes) ===
+iterations  probability(sim)  probability(theory)
+         0             0.125                0.125
+         1             0.781                0.781
+         2             0.945                0.945
+         3             0.330                0.330
+         4             0.012                0.012
+         5             0.548                0.548
+         6             1.000                1.000
+         7             0.577                0.577
+
+=== Quantum walk and classical walk, N = 4 nodes ===
+Start probability of marked node : 0.250
+Best quantum probability         : 0.427 at step 3 (window = 30 steps)
+Classical average hitting time   : 2.50  (theory (N^2-1)/6 = 2.50)
+
+=== Quantum walk and classical walk, N = 8 nodes ===
+Start probability of marked node : 0.125
+Best quantum probability         : 0.410 at step 29 (window = 30 steps)
+Classical average hitting time   : 10.46  (theory (N^2-1)/6 = 10.50)
+
+=== Validation ===
+check                                                       expected       got  ok
+Grover n=2: simulation vs theory (largest difference)         0.0000    0.0000  Yes
+Grover n=3: simulation vs theory (largest difference)         0.0000    0.0000  Yes
+Grover n=2: probability after 1 iteration                     1.0000    1.0000  Yes
+Grover n=3: probability after 2 iterations                    0.9453    0.9453  Yes
+N=4: walk operator is unitary (U^T U = I)                     0.0000    0.0000  Yes
+N=4: total probability stays 1 after 30 steps                 1.0000    1.0000  Yes
+N=4: classical hitting time vs (N^2-1)/6                      2.5000    2.5017  Yes
+N=8: walk operator is unitary (U^T U = I)                     0.0000    0.0000  Yes
+N=8: total probability stays 1 after 30 steps                 1.0000    1.0000  Yes
+N=8: classical hitting time vs (N^2-1)/6                     10.5000   10.4643  Yes
+
+Figures saved in figures/, tables saved in results/

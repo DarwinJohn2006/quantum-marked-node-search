@@ -1,0 +1,7 @@
+setting,error_or_gates,marked_node_hits,shots,success_rate,tvd
+"Aer, no noise",,1024,1024,1.0,0.0
+Depolarizing noise: none,0.0/0.0,1024,1024,1.0,0.0
+Depolarizing noise: low,0.001/0.01,1006,1024,0.9824,0.0176
+Depolarizing noise: medium,0.01/0.05,919,1024,0.8975,0.1025
+Depolarizing noise: high,0.03/0.1,762,1024,0.7441,0.2559
+Fake IBM Brisbane,2 two-qubit gates,972,1024,0.9492,0.0508
